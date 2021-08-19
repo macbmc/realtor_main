@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prev/Chat.dart';
 class Detailpg extends StatefulWidget {
   
 
@@ -127,7 +128,9 @@ class _DetailpgState extends State<Detailpg> {
                       )
                   ),
                   child: TextButton(
-                      onPressed: (){print("chat");},
+                      onPressed: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                        return Chater();
+                      }));},
                       child: Text("Chat with Seller",style: TextStyle(
                           fontSize: 20, fontWeight: FontWeight.bold,color: Colors.green)),
                   ),
